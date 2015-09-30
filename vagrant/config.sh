@@ -16,6 +16,10 @@ apache2ctl stop
 while pgrep apache2 &>/dev/null; do sleep 0.1; done
 apache2ctl start
 
+dos2unix /vagrant/vagrant/config/.bash_once
+dos2unix /vagrant/vagrant/config/bashrc
+dos2unix /vagrant/vagrant/user.sh
+
 cp /vagrant/vagrant/config/.bash_once /home/vagrant/
 chown vagrant:vagrant /home/vagrant/.bash_once
 chmod u+x /home/vagrant/.bash_once

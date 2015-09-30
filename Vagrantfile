@@ -23,7 +23,5 @@ Vagrant.configure(2) do |config|
   # Uncomment the following line to include MySQL into Vagrant configuration
   #config.vm.provision "shell", path: "vagrant/config-mysql.sh"
 
-  config.vm.provision "shell", inline: "echo 'Please run vagrant/user.sh after you log in to the machine for the first time.'"
-
   config.vm.provision "shell", path: "vagrant/startup.sh", run: "always"
 end

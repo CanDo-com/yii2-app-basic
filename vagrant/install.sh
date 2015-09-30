@@ -5,6 +5,7 @@ apt-get install -y php5 php5-gd php5-mcrypt php5-curl
 apt-get install -y nodejs npm
 apt-get install -y openjdk-7-jre
 apt-get install -y git
+apt-get install -y dos2unix
 
 ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g less
