@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "537df25c41b66c0643eaf40e39c22b5f",
-    "content-hash": "ef766313b12c9e9fed1344306738ef3a",
+    "hash": "ff146f9767daf1920acb6f0ecd186d6e",
+    "content-hash": "176a8d29c06e98ae10ccf1ccfbdc55b6",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -685,6 +685,52 @@
                 "fixtures"
             ],
             "time": "2015-05-29 06:29:14"
+        },
+        {
+            "name": "packagist/closurecompiler-bin",
+            "version": "v2015.05.05",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/packagist/closurecompiler-bin.git",
+                "reference": "d52231c49813347010fa605d0f102ada68bb8b4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/packagist/closurecompiler-bin/zipball/d52231c49813347010fa605d0f102ada68bb8b4b",
+                "reference": "d52231c49813347010fa605d0f102ada68bb8b4b",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/compiler.jar"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Google Inc.",
+                    "homepage": "https://developers.google.com/closure/compiler/"
+                },
+                {
+                    "name": "Package Maintainer",
+                    "email": "kaiwa@20minutemail.com",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "The Closure Compiler is a tool for making JavaScript download and run faster. It is a true compiler for JavaScript. Instead of compiling from a source language to machine code, it compiles from JavaScript to better JavaScript. It parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls. Packaged for composer.",
+            "keywords": [
+                "binary",
+                "closure",
+                "compiler",
+                "compress",
+                "google",
+                "javascript",
+                "minification",
+                "minify"
+            ],
+            "time": "2015-05-20 13:38:08"
         },
         {
             "name": "phpspec/php-diff",
