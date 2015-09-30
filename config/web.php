@@ -8,6 +8,8 @@ $config = [
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
+			'enableCookieValidation' => false,
+	        'enableCsrfValidation' => false,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -27,7 +29,20 @@ $config = [
             'showScriptName' => false,
             'rules' => require(__DIR__ . '/routes.php'),
         ],
-    ],
+		'assetManager' => [
+			'converter' => [
+				'class' => 'yii\web\AssetConverter',
+				'commands' => [
+					'less' => [
+						'css',
+						'lessc {from} {to} --no-color'
+					],
+				],
+				'forceConvert' => true,
+			],
+			'forceCopy' => true,
+		],
+	],
     'params' => $params,
 ];
 
