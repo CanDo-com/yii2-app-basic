@@ -29,5 +29,7 @@ Vagrant.configure(2) do |config|
   # Uncomment the following line to include PostgreSQL into Vagrant configuration
   #config.vm.provision "shell", path: "vagrant/config-postgre.sh"
 
+  config.vm.provision "shell", path: "vagrant/config-project.sh"
+
   config.vm.provision "shell", path: "vagrant/startup.sh", run: "always"
 end

@@ -25,3 +25,6 @@ chown vagrant:vagrant /home/vagrant/.bash_once
 chmod u+x /home/vagrant/.bash_once
 
 cat /vagrant/vagrant/config/bashrc >> /home/vagrant/.bashrc
+
+# set the environment into DEBUG mode
+cp /vagrant/config/env.php.debug /vagrant/config/env.php

@@ -31,3 +31,4 @@ phpunit.phar
 
 #config files
 /config/db.php
+/config/env.php
