@@ -18,10 +18,16 @@ Vagrant.configure(2) do |config|
   # Uncomment the following line to include MySQL into Vagrant configuration
   #config.vm.provision "shell", path: "vagrant/install-mysql.sh"
 
+  # Uncomment the following line to include PostgreSQL into Vagrant configuration
+  #config.vm.provision "shell", path: "vagrant/install-postgre.sh"
+
   config.vm.provision "shell", path: "vagrant/config.sh"
 
   # Uncomment the following line to include MySQL into Vagrant configuration
   #config.vm.provision "shell", path: "vagrant/config-mysql.sh"
+
+  # Uncomment the following line to include PostgreSQL into Vagrant configuration
+  #config.vm.provision "shell", path: "vagrant/config-postgre.sh"
 
   config.vm.provision "shell", path: "vagrant/startup.sh", run: "always"
 end
