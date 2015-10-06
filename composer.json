@@ -13,18 +13,32 @@
         "source": "https://github.com/yiisoft/yii2"
     },
     "minimum-stability": "stable",
+
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/CanDo-com/yii2-db.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github.com:yiisoft/yii2-httpclient.git"
+		}
+	],
+
     "require": {
         "php": ">=5.5.0",
+		"bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
         "yiisoft/yii2": ">=2.0.5",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*"
+		"yiisoft/yii2-httpclient": "dev-master",
+		"yiisoft/yii2-swiftmailer": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*",
-		"packagist/closurecompiler-bin": "*"
+		"packagist/closurecompiler-bin": "*",
+		"cando/yii2-db": "dev-master"
     },
     "config": {
         "process-timeout": 1800

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff146f9767daf1920acb6f0ecd186d6e",
-    "content-hash": "176a8d29c06e98ae10ccf1ccfbdc55b6",
+    "hash": "210287e435efdc2f9d9e7d55b449bb81",
+    "content-hash": "715b04cd64c679964669fa75e9675020",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -459,56 +459,6 @@
             "time": "2015-08-05 22:00:30"
         },
         {
-            "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
-                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.6"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\bootstrap\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com"
-                }
-            ],
-            "description": "The Twitter Bootstrap extension for the Yii framework",
-            "keywords": [
-                "bootstrap",
-                "yii2"
-            ],
-            "time": "2015-09-23 17:48:24"
-        },
-        {
             "name": "yiisoft/yii2-composer",
             "version": "2.0.3",
             "source": {
@@ -554,6 +504,59 @@
                 "yii2"
             ],
             "time": "2015-03-01 06:22:44"
+        },
+        {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "46d10b533ee05d7ed76e757d7ecfdcbac2b7d346"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/46d10b533ee05d7ed76e757d7ecfdcbac2b7d346",
+                "reference": "46d10b533ee05d7ed76e757d7ecfdcbac2b7d346",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/yiisoft/yii2-httpclient/issues",
+                "forum": "http://www.yiiframework.com/forum/",
+                "wiki": "http://www.yiiframework.com/wiki/",
+                "irc": "irc://irc.freenode.net/yii",
+                "source": "https://github.com/yiisoft/yii2-httpclient"
+            },
+            "time": "2015-09-09 10:42:06"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -633,6 +636,47 @@
             "extra": {
                 "bower-asset-main": "dist/typeahead.bundle.js"
             }
+        },
+        {
+            "name": "cando/yii2-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CanDo-com/yii2-db.git",
+                "reference": "b939f26254d853068219e394e2cc71d89aadd033"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CanDo-com/yii2-db/zipball/b939f26254d853068219e394e2cc71d89aadd033",
+                "reference": "b939f26254d853068219e394e2cc71d89aadd033",
+                "shasum": ""
+            },
+            "require-dev": {
+                "yiisoft/yii2": ">=2.0.6",
+                "yiisoft/yii2-gii": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "cando\\database\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sergiy Misyura",
+                    "email": "sergiy@cando.com"
+                }
+            ],
+            "description": "Database-related helpers for Yii2 framework",
+            "keywords": [
+                "database",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/CanDo-com/yii2-db/tree/master",
+                "issues": "https://github.com/CanDo-com/yii2-db/issues"
+            },
+            "time": "2015-10-06 19:51:40"
         },
         {
             "name": "fzaninotto/faker",
@@ -765,6 +809,56 @@
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
             "time": "2013-11-01 13:02:21"
+        },
+        {
+            "name": "yiisoft/yii2-bootstrap",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\bootstrap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The Twitter Bootstrap extension for the Yii framework",
+            "keywords": [
+                "bootstrap",
+                "yii2"
+            ],
+            "time": "2015-09-23 17:48:24"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -961,7 +1055,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "yiisoft/yii2-httpclient": 20,
+        "cando/yii2-db": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
